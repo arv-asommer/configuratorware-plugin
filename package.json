@@ -1,0 +1,48 @@
+{
+    "name": "configurator-frontendgui",
+    "version": "1.0.0",
+    "private": true,
+    "main": "./src/index.js",
+    "dependencies": {
+        "@configuratorware/configurator-frontendgui": "^1.29.0",
+        "fontfaceobserver": "^2.1.0",
+        "react-custom-scrollbars": "^4.2.1",
+        "react-file-drop": "^0.2.8"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.16.0",
+        "@babel/plugin-proposal-class-properties": "^7.13.0",
+        "@babel/plugin-proposal-decorators": "^7.13.5",
+        "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+        "@babel/preset-env": "^7.13.12",
+        "@babel/preset-react": "^7.13.13",
+        "@babel/preset-typescript": "^7.13.0",
+        "babel-loader": "^8.2.2",
+        "babel-plugin-module-resolver": "^4.1.0",
+        "css-loader": "^5.2.0",
+        "file-loader": "^6.2.0",
+        "mini-css-extract-plugin": "^1.4.0",
+        "node-sass": "^5.0.0",
+        "optimize-css-assets-webpack-plugin": "^5.0.4",
+        "resolve-url-loader": "^3.1.2",
+        "sass-loader": "^11.0.1",
+        "style-loader": "^2.0.0",
+        "url-loader": "^4.1.1",
+        "webpack": "^5.28.0",
+        "webpack-cli": "^4.6.0",
+        "webpack-dev-server": "^3.11.2"
+    },
+    "peerDependencies": {
+        "@material-ui/core": "*",
+        "@material-ui/icons": "*",
+        "lodash": "*",
+        "prop-types": "*",
+        "react": "*",
+        "react-dom": "*",
+        "react-redux": "*"
+    },
+    "scripts": {
+        "start": "webpack serve --port 3001 --host 0.0.0.0",
+        "build": "webpack --config webpack.production.config.js"
+    }
+}
